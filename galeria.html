@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="mojemennu.css">
 	<link rel="stylesheet" href="galeria.css">
-	
+										<!-- funkcia Javascriptu ktorá mení obrazok každých 5 sekúnd na bočných paneloch-->
 	<script language="javascript" type="text/javascript">
 		var timerid = 0;
 		var images = new Array("fotka7.jpg",
@@ -43,7 +43,7 @@
 
 <body onload="startTime();">
 
-	<div id="mojemennu">
+	<div id="mojemennu">				<!-- to isté ako v úvode-->
 		<div class="lista" id="porazi"> Jakub Petrila</div>
 		<div id="linky">
 			<a href="projekt.html">Úvod</a>
@@ -79,10 +79,10 @@
 			prevScrollpos = currentScrollPos;
 		}
 	</script>
-	<div id="velke">Galéria</div>
+	<div id="velke">Galéria</div> 			<!-- krátky úvod  do galérie-->
 	<p>Vítam vás v galerii možete si tu pozrieť fotky mňa mojich priateľov a iných momentiek.</p>
 
-	<div class="container">
+	<div class="container">			<!-- obrázky galérie ktoré budú zobrazené na vačšom plátne-->
 
 
 		<div class="mySlides">
@@ -167,14 +167,14 @@
 			<img src=" fotka18.jpg" style="width:100%;;" alt="obrazok">
 		</div>
 
-
+						<!-- šipky ktoré posúvajú obrázky dopredu a do zadu-->
 
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
-
+							<!-- obrázky pod plátnom-->
 
 		<div class="row">
 			<div class="column">
@@ -251,7 +251,7 @@
 			</div>
 
 		</div>
-	</div>
+	</div>								<!-- funkcia Javascriptu pomocou ktorej sa zobrazujú obrázky na plátne -->
 	<script>
 		let slideIndex = 1;
 		showSlides(slideIndex);
@@ -282,7 +282,7 @@
 			dots[slideIndex - 1].className += " active";
 		}
 	</script>
-
+					<!--bočné panely s obrázkami-->
 	<img id="img2" class="lavo" src=" fotka1.jpg" alt="obrazok"/>
 	<img id="img1" class="lavo" src=" fotka1.jpg" alt="obrazok"/>
 
