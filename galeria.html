@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="mojemennu.css">
+	<link rel="stylesheet" href="galeria.css">
+	
+	<script language="javascript" type="text/javascript">
+		var timerid = 0;
+		var images = new Array("fotka7.jpg",
+			"fotka4.jpg",
+			"fotka5.jpg",
+			"fotka6.jpg",
+			"fotka8.jpg",
+			"fotka11.jpg");
+		var countimages = 0;
+		function startTime() {
+			if (timerid) {
+				timerid = 0;
+			}
+			var tDate = new Date();
+
+			if (countimages == images.length) {
+				countimages = 0;
+			}
+			if (tDate.getSeconds() % 5 == 0) {
+				document.getElementById("img1").src = images[countimages];
+				document.getElementById("img2").src = images[countimages];
+			}
+			countimages++;
+
+			timerid = setTimeout("startTime()", 1000);
+		}
+	</script>
+
+</head>
+
+<body onload="startTime();">
+
+	<div id="mojemennu">
+		<div class="lista" id="porazi"> Jakub Petrila</div>
+		<div id="linky">
+			<a href="projekt.html">Úvod</a>
+			<a href="omne.html">Niečo viac o mne</a>
+			<a href="galeria.html">Galeria</a>
+			<a href="kontakty.html">Kontakty</a>
+
+
+		</div>
+		<a href="javascript:void(0);" class="burger" onclick="myFunction()">&#9776</a>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("linky");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "block";
+
+			}
+		}
+	</script>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("mojemennu").style.top = "0";
+			} else {
+				document.getElementById("mojemennu").style.top = "-450px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
+	<div id="velke">Galéria</div>
+	<p>Vítam vás v galerii možete si tu pozrieť fotky mňa mojich priateľov a iných momentiek.</p>
+
+	<div class="container">
+
+
+		<div class="mySlides">
+
+			<img src=" fotka1.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka2.jpg" style="width:100%;" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka3.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka4.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+			<img src=" fotka5.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka6.jpg" style="width:100%" alt="obrazok">
+		</div>
+		<div class="mySlides">
+			<img src=" fotka7.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka8.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka9.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka10.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+			<img src=" fotka11.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka12.jpg" style="width:100%" alt="obrazok">
+		</div>
+		<div class="mySlides">
+
+			<img src=" fotka13.jpg" style="width:100%" alt="obrazok">
+		</div>
+		<div class="mySlides">
+			<img src=" fotka14.jpg" style="width:100%;" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka15.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka16.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+
+			<img src=" fotka17.jpg" style="width:100%" alt="obrazok">
+		</div>
+
+		<div class="mySlides">
+			<img src=" fotka18.jpg" style="width:100%;;" alt="obrazok">
+		</div>
+
+
+
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+		<div class="row">
+			<div class="column">
+				<img class="demo cursor" src=" fotka1.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(1)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka2.jpg" style="height: 125px;width: 100%;" alt="obrazok"
+					onclick="currentSlide(2)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka3.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(3)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka4.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(4)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka5.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(5)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka6.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(6)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka7.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(7)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka8.jpg" style="height: 125px;width: 100%;" alt="obrazok"
+					onclick="currentSlide(8)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka9.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(9)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka10.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(10)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka11.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(11)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka12.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(12)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka13.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(13)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka14.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(14)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka15.jpg" style="height: 125px;width: 100%;" alt="obrazok"
+					onclick="currentSlide(15)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka16.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(16)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka17.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(17)">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src=" fotka18.jpg" style="width:100%;height: 125px" alt="obrazok"
+					onclick="currentSlide(18)">
+			</div>
+
+		</div>
+	</div>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+	
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+	
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("demo");
+			if (n > slides.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
+	</script>
+
+	<img id="img2" class="lavo" src=" fotka1.jpg" alt="obrazok"/>
+	<img id="img1" class="lavo" src=" fotka1.jpg" alt="obrazok"/>
+
+
+</body>
+
+</html>

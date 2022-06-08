@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mojemennu.css">
+  <link rel="stylesheet" href="projekt.css">
+  <link rel="stylesheet" href="reset.css">
+
+
+
+</head>
+
+<body>
+
+
+  <div id="mojemennu">
+    <div class="lista" id="porazi">Jakub Petrila</div>
+    <div id="linky">
+      <a href="projekt.html">Úvod</a>
+      <a href="omne.html">Niečo viac o mne</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="kontakty.html">Kontakty</a>
+
+    </div>
+    <a href="javascript:void(0);" class="burger" onclick="myFunction()">&#9776</a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("linky");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+      else {
+        x.style.display = "block";
+
+      }
+    }
+  </script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("mojemennu").style.top = "0";
+      } else {
+        document.getElementById("mojemennu").style.top = "-450px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+  <div id="container">
+    <div id="predslov">
+      <p>Ahojte ako ste sa mohli z názvu dočítať moje meno je Jakub Petrila. Na tejto stránke sa budeme môcť dozvedieť
+        niečo o mne, o mojich záľubách,vzdelaní a o mnohom ďalšom. Dúfam že sa vám moja stránka bude páčiť a ak áno
+        kľudne mi môžeš napísať na môj facebook alebo instagram.</p>
+    </div>
+    <div class="životopis">
+
+      <div class="nadpis">Jakub Petrila</div>
+      <img src="mojafoto.jpg.jpg" class="krasa" alt="mojksicht">
+      <div id="hlava">
+        <br>
+        <p class="malynadpis">Dátum narodenia:</p>
+        <br>
+        <p class="odpoved">30.3.2006</p>
+        <p class="malynadpis">Miesto narodenia:</p>
+        <br>
+        <p class="odpoved">Prešov</p>
+        <p class="malynadpis">Adresa:</p>
+        <br>
+        <p class="odpoved">Lemešany 888
+          <br>
+          082 03
+          <br>
+          Lemešany
+        </p>
+      </div>
+      <hr>
+
+      <p class="mensinadpis">Vzdelanie:</p>
+      <br>
+      <p class="modpoved">2012-2021:<br><u>Základná škola s materskou školou Lemešany</u></p>
+      <br>
+      <p class="modpoved">2021-:<br><u>Stredná škola elektrotechnická Prešov</u></p>
+      <br>
+      <p class="mensinadpis">Pracovné skúsenosti:</p>
+      <br>
+      <p class="modpoved">2017-2018:<br><u>JankoStav s.r.o</u><br>výroba malty,betónu,učenec murár</p>
+      <br>
+      <p class="modpoved">2019-2020:<br><u>Mirkoakosť s.r.o</u><br>automechanik,hlavný vymienač pneomatýk</p>
+      <br>
+      <p class="mensinadpis">Jazykové schopnosti:</p>
+      <br>
+      <p class="modpoved"><u>Angličtina:</u><br>komplikované</p>
+      <br>
+      <p class="modpoved"><u>Slovenčina:</u><br>pokročilí</p>
+      <br>
+      <p class="modpoved"><u>Nemčina:</u><br>vôbec</p>
+      <br>
+      <p class="mensinadpis">Záľuby:</p>
+      <br>
+      <p class="modpoved"><u>Futbal</u>-(horská liga)</p>
+      <br>
+      <p class="modpoved"><u>Biciklovanie</u></p>
+      <br>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+#predslov {
+  font-size: 250%;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 200px;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.životopis {
+  height: 1500px;
+  width: 70%;
+  background: white;
+  margin-left: 15%;
+  margin-top: 100px;
+  margin-right: 15%;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 5px 10px 100px 5px black;
+}
+
+.životopis:hover {
+  transform: scale(1.05);
+}
+
+.nadpis {
+  font-size: 600%;
+  height: auto;
+  padding-top: 30px;
+  margin-left: 35%;
+  margin-right: auto;
+}
+
+.krasa {
+  position: absolute;
+  height: 350px;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: -82px;
+  border-radius: 100PX;
+}
+
+.malynadpis {
+  font-size: 300%;
+  padding-left: 45%;
+}
+
+.odpoved {
+  font-size: 200%;
+  padding-left: 70%;
+}
+
+.mensinadpis {
+  font-size: 250%;
+  padding-left: 3%;
+}
+
+.modpoved {
+  font-size: 150%;
+  padding-left: 15%;
+}
+
+@media screen and (max-width: 1118px) {
+
+  .životopis {
+    height: 1600px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .životopis {
+    height: 1500px;
+  }
+
+  .nadpis {
+    font-size: 500%;
+  }
+
+  .malynadpis {
+    font-size: 250%;
+    padding-left: 45%;
+  }
+
+  .odpoved {
+    font-size: 170%;
+    padding-left: 70%;
+  }
+
+  .mensinadpis {
+    font-size: 170%;
+    padding-left: 3%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nadpis {
+    font-size: 400%;
+    padding-top: 30px;
+    margin-left: 0%;
+
+  }
+
+  .malynadpis {
+    font-size: 200%;
+    margin-left: 0%;
+    padding-left: 0;
+  }
+
+  .odpoved {
+    font-size: 130%;
+    padding-left: 70%;
+  }
+
+  .mensinadpis {
+    font-size: 130%;
+    padding-left: 3%;
+  }
+
+  img {
+    display: none;
+  }
+
+  .modpoved {
+    font-size: 100%;
+    padding-left: 15%;
+  }
+
+  .životopis {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .nadpis {
+    font-size: 370%;
+    padding-top: 30px;
+    margin-left: 0%;
+
+  }
+
+  .malynadpis {
+    font-size: 170%;
+    margin-left: 0%;
+    padding-left: 0;
+  }
+
+  .odpoved {
+    font-size: 100%;
+    padding-left: 70%;
+  }
+
+  .mensinadpis {
+    font-size: 100%;
+    padding-left: 3%;
+  }
+
+  img {
+    display: none;
+  }
+
+  .modpoved {
+    font-size: 70%;
+    padding-left: 15%;
+  }
+
+  .životopis {
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  #predslov {
+    width: 110%;
+    font-size: 25px;
+    margin-top: 100px;
+
+  }
+
+  .životopis {
+    width: 100%;
+
+    margin-top: 100px;
+    height: 900px;
+  }
+
+  .nadpis {
+    font-size: 35px;
+    height: auto;
+    padding-top: 30px;
+    margin-left: 0%;
+    margin-right: auto;
+    width: 110%;
+
+  }
+
+  .krasa {
+    position: absolute;
+    height: 120px;
+    width: 27%;
+    margin-left: 3%;
+    margin-top: 0px;
+    border-radius: 30PX;
+  }
+
+  .malynadpis {
+    font-size: 20px;
+    padding-left: 45%;
+  }
+
+  .odpoved {
+    font-size: 15px;
+    padding-left: 70%;
+  }
+
+  .mensinadpis {
+    font-size: 20px;
+    padding-left: 3%;
+  }
+
+  .modpoved {
+    font-size: 15px;
+    padding-left: 15%;
+  }
+}

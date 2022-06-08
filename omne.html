@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="mojemennu.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="omne.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    $(document).ready(function () {
+      $("#klik").click(function () {
+        $(".important").addClass("blue");
+      });
+    });
+    $(document).ready(function () {
+      $("#klik").click(function () {
+        $(".important").addClass("blue");
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div id="mojemennu">
+    <div class="lista" id="porazi">Jakub Petrila</div>
+    <div id="linky">
+      <a href="projekt.html">Úvod</a>
+      <a href="omne.html">Niečo viac o mne</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="kontakty.html">Kontakty</a>
+
+
+    </div>
+    <a href="javascript:void(0);" class="burger" onclick="myFunction()">&#9776</a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("linky");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+      else {
+        x.style.display = "block";
+
+      }
+    }
+  </script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("mojemennu").style.top = "0";
+      } else {
+        document.getElementById("mojemennu").style.top = "-450px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+  <div class="menuu"> <a href="#det">Detstvo</a> <a href="#skola">Základná</a> <a href="#suca">Súčastnosť</a> </div>
+  <div id="container">
+    <div class="nadpis" id="det">Detstvo</div>
+    <p>Narodil som sa v roku 2006 ako prvorodené dieťa v našej rodine.
+      Detstvo som prežíval s rodičmi v dome v Lemešanoch ktorý doteraz ešte prerábame.
+      <img src="skolka.jpg" class="obrazok" alt="obrazok">
+      Keď som mal
+    <p class="important"> 2 roky narodila sa mi sestra </p>
+    <p> ja som si postupne hľadal prvých kamarátov ktorý boli najprv moji susedia.
+      <br>
+    <p class="important">V 4 rokoch som nastúpil</p>
+    <p>
+      do škôlky kde som našiel mnoho ďalších kamarátov, z ktorími sa stretávam až do teraz, a spoznal som veľa milích a
+      láskavých učiteliek ktoré sa o nás starali aj keď neraz sme im už liezli na nervy. Vtedy som
+    <p class="important">začínal mať prvé koníčky a záľuby ako napríklad futbal</p>
+    <p> alebo kreslenie.<br>Boli to pekné časi na ktoré doteraz s úsmevom spomínam aj keď
+      na vačšinu si ani nepametám.</p>
+    <hr>
+    <div class="nadpis2" id="skola">Základná škola</div>
+    <img src="skola.jpg" class="skola" alt="obrazok">
+    <p>Nastúpil som ňa nu ako prváčik
+    <p class="important">v roku 2012. </p>
+    <p>ú základnú sme boli veľmi malá trieda kde som nemla veľa kamarátov no nahradil som ich kamarátmi z mladšej triedy
+      kde som si ich našiel oveľa viac.<br>
+      Mám s nimi veeeľmi veľa zážitkov na ktoré nikdy nezabudnem a spolu sme si prešli krásnych 9 rokov (dokonca jeden z
+      nich nastupuje na strednú školu kde som aj ja).<br>
+      Počas základnej školy sa mi
+    <p class="important">podarilo urobiť niekoľko úspechov</p>
+    <p>ktoré sa mi vryli do pamate . Zúčastňoval som sa na mnoho súťažiach a turnajoch na ktorých sa mi pomerne
+      darilo.<br> Môj najvačší úspech bol v celoslovenskej súťaži Hľadá sa energia kde s mojimi kamarátmi v tíme sme
+    <p class="important"> vyhrali tretie miesto </p>
+    <p>a 150 eur pre náš tím. </p>
+    <hr>
+    <div class="nadpis" id="suca">Súčastnosť</div>
+    <p>Teraz chodím na
+    <p class="important">Strednú Priemyselnú školu<img src="sucast.jpg" class="obrazok" alt="obrazok">
+      elektrotechnickú</p>
+    <p> kde som znova spoznal ďalších priateľov ktorých mám veľmi rád a viem že sa na nich môžem spoľahnúť.<br>
+      Mám veľkú triedy kde je
+    <p class="important"> mnoho múdrych a šikovných ludí </p>
+    <p>ktorých obdivujem a snažím sa s nimi čo najviac spolupracovať .<br>
+      Štúdium som zataľ zvládal no myslím si že najťažšie ma ešte len čaká , ako napríklad koniec roka kde musím
+      zvládnuť mnoho testov a pokúsim sa získať certifikáty.</p>
+    <hr>
+    <p style="color: white;"> Pre viac info vypíš kontaktný <a href="kontakty.html">formulár</a> alebo si pozri moje <a
+        href="kontakty.html">socialne siete!</a> </p>
+    <div id="klik">Klikni ak chceš zobraziť dôležité</div>
+  </div>
+
+
+</body>
+
+</html>

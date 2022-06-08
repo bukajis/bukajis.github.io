@@ -1,0 +1,415 @@
+.container {
+    margin-top: 120px;
+    margin-left: 3%;
+
+    width: 50%;
+
+}
+
+#farba {
+    width: 33%;
+    height: 5000px;
+    z-index: 0;
+    position: fixed;
+    background: rgb(75, 75, 75);
+    ;
+}
+
+.fw-bold {
+    font-size: 30px;
+}
+
+.horne {
+    font-size: 50px;
+}
+
+#mesto {
+    margin-left: 19%;
+}
+
+hr {
+    width: 100%
+}
+
+.row {
+    width: 100%;
+
+
+}
+
+.vr {
+    border-left: 6px solid rgb(255, 255, 255);
+    height: 6000px;
+    position: absolute;
+    margin-top: -500px;
+    left: 30%;
+    margin-left: 0px;
+    top: 0;
+
+}
+
+#mojeud {
+    margin-left: 50%;
+    position: absolute;
+    margin-top: 200px;
+    display: grid;
+
+}
+
+#haha {
+    position: fixed;
+    width: 110%;
+
+}
+
+img {
+    height: 200px;
+    width: 35%;
+    margin-left: -40%;
+
+}
+
+.obraz {
+    margin-top: 50px;
+}
+
+#nadpis {
+    font-size: 80px;
+    margin-left: -40%;
+    margin-top: -50px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 50px;
+    margin-top: -150px;
+    color: rgb(255, 255, 255);
+}
+
+.tel {
+    margin-left: 27%;
+}
+
+.suhlas {
+
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1750px) {
+    .col-md-11 {
+        width: 100%;
+    }
+
+    .container {
+
+        margin-top: 120px;
+        margin-left: 1%;
+        width: 100%;
+
+    }
+
+    #farba {
+        width: 33%;
+        height: 5000px;
+        z-index: 0;
+        position: relative;
+        background: rgb(75, 75, 75);
+        ;
+        display: none;
+    }
+
+    .fw-bold {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .horne {
+        font-size: 50px;
+        margin-top: 200px;
+    }
+
+    #mesto {
+        margin-left: 0%;
+    }
+
+    hr {
+
+        margin-left: -40%;
+    }
+
+    .row {
+        width: 100%;
+
+
+    }
+
+    .tel {
+        margin-left: 0%;
+    }
+
+    .vr {
+        border-left: 6px solid rgb(255, 255, 255);
+        height: 5000px;
+        position: relative;
+        left: 30%;
+        margin-left: 0px;
+        top: 0;
+        display: none;
+
+    }
+
+    #mojeud {
+
+        margin-left: 40%;
+        position: absolute;
+        margin-top: 200px;
+        display: grid;
+        width: 100%;
+
+
+    }
+
+    #haha {
+        position: relative;
+        width: 150%;
+        margin-left: 30%;
+
+    }
+
+    img {
+        height: 200px;
+        width: 20%;
+        margin-left: -40%;
+
+    }
+
+    .obraz {
+        margin-top: 50px;
+
+
+    }
+
+    #nadpis {
+        font-size: 60px;
+        margin-left: -40%;
+        margin-top: -200px;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+@media screen and (max-width:913px) {
+    p {
+        font-size: 40px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 769px) {
+    .col-md-11 {
+        width: 100%;
+    }
+
+    .container {
+
+        margin-top: 120px;
+        margin-left: 1%;
+        width: 100%;
+
+    }
+
+    #farba {
+        width: 33%;
+        height: 5000px;
+        z-index: 0;
+        position: relative;
+        background: rgb(75, 75, 75);
+        ;
+        display: none;
+    }
+
+    .fw-bold {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .horne {
+        font-size: 50px;
+    }
+
+    #mesto {
+        margin-left: 0%;
+    }
+
+    hr {
+
+        margin-left: -40%;
+    }
+
+    .row {
+        width: 100%;
+
+
+    }
+
+    .vr {
+        border-left: 6px solid rgb(255, 255, 255);
+        height: 5000px;
+        position: relative;
+        left: 30%;
+        margin-left: 0px;
+        top: 0;
+        display: none;
+
+    }
+
+    #mojeud {
+
+
+        position: absolute;
+        margin-top: 200px;
+        display: grid;
+        width: 100%;
+
+
+    }
+
+    #haha {
+        position: relative;
+        width: 80%;
+        margin-left: 0%;
+
+    }
+
+    img {
+        height: 200px;
+        width: 20%;
+        margin-left: -40%;
+
+    }
+
+    .obraz {
+        margin-top: 50px;
+
+
+    }
+
+    #nadpis {
+        font-size: 60px;
+        margin-left: -40%;
+        margin-top: -200px;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        margin-top: 120px;
+        margin-left: 1%;
+        width: 87%;
+
+    }
+
+    #farba {
+        width: 33%;
+        height: 5000px;
+        z-index: 0;
+        position: relative;
+        background: rgb(75, 75, 75);
+        ;
+        display: none;
+    }
+
+    .fw-bold {
+        font-size: 30px;
+    }
+
+    .horne {
+        font-size: 30px;
+    }
+
+    #mesto {
+        margin-left: 0%;
+    }
+
+    hr {
+        width: 100%
+    }
+
+    .row {
+        width: 100%;
+
+
+    }
+
+    .vr {
+        border-left: 6px solid rgb(255, 255, 255);
+        height: 5000px;
+        position: relative;
+        left: 30%;
+        margin-left: 0px;
+        top: 0;
+        display: none;
+
+    }
+
+    #mojeud {
+        margin-left: 40%;
+        margin-top: -500px;
+        position: absolute;
+        margin-top: 200px;
+        display: grid;
+
+    }
+
+    #haha {
+        position: relative;
+
+
+    }
+
+    img {
+        height: 100px;
+        width: 25%;
+        margin-left: -40%;
+
+    }
+
+    .obraz {
+        margin-top: 50px;
+        font-size: 20px;
+
+    }
+
+    #nadpis {
+        font-size: 40px;
+        margin-left: -40%;
+        margin-top: -200px;
+        color: rgb(255, 255, 255);
+    }
+
+    p {
+        margin-left: -8%;
+        font-size: 20px;
+        margin-top: -65px;
+        color: rgb(255, 255, 255);
+    }
+
+    #tel {
+        margin-left: 0;
+    }
+
+    .sprava {
+        padding-bottom: 200px;
+    }
+
+}

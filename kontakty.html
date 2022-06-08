@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="mojemennu.css">
+
+
+  <link rel="stylesheet" href="kontakt.css">
+
+
+
+</head>
+
+<body>
+
+  <div id="mojemennu">
+    <div class="lista" id="porazi">Jakub Petrila</div>
+    <div id="linky">
+      <a href="projekt.html">Úvod</a>
+      <a href="omne.html">Niečo viac o mne</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="kontakty.html">Kontakty</a>
+
+    </div>
+    <a href="javascript:void(0);" class="burger" onclick="myFunction()">&#9776</a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("linky");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+      else {
+        x.style.display = "block";
+
+      }
+    }
+  </script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("mojemennu").style.top = "0";
+      } else {
+        document.getElementById("mojemennu").style.top = "-450px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+  <div id="farba"></div>
+  <div class="horne"> Vyplň svoje údaje ak chceš aby som ťa mohol spätne kontaktoval:</div>
+  <div id="haha">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h1 class="fw-bold">
+
+          </h1>
+          <form>
+            <div class="mb-3 fw-bold">
+              <div class="col-md-11 mb-4 fw-bold">
+                <label for="menofw-bold">Meno a priezvisko</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="row">
+                <div class="col-md-4 mb-3 fw-bold">
+                  <label for="ulica">Ulica</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3 fw-bold" id="mesto">
+                  <label for="mesto">
+                    Mesto
+                  </label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2 mb-4 fw-bold ">
+                  <label for="psc">PSČ</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="tel col-md-5 mb-4 fw-bold">
+                  <label for="tel">Telefón</label>
+                  <input type="text" class="form-control">
+                </div>
+
+              </div>
+              <div class="col-md-11 mb-3 fw-bold">
+                <label for="mail">E-mail</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-11 mb-3 fw-bold ">
+                <label for="mail">Správa</label>
+                <input type="text" class="form-control sprava">
+              </div>
+              <div class="col-md-11 mb-3 fw-bold suhlas">
+                <input type="checkbox" name="zatrhavacie policko">
+                Suhlasim so spracovanim osobných udajov
+              </div>
+
+              <input type="submit" name="odoslat">
+
+            </div>
+
+
+
+          </form>
+        </div>
+
+
+      </div>
+      <div class="vr"></div>
+    </div>
+  </div>
+  <div id="mojeud">
+    <h1 id="nadpis">Moje kontaktné údaje:</h1>
+    <img id="gmail" src="Gmail-Logo.webp" alt="obrazok">
+    <p>Gmail: petrila@spse-po.sk</p>
+    <hr>
+    <div class="obraz">
+      <img src="telefone.png" alt="obrazok">
+    </div>
+    <p>T. číslo: 0980 257 879</p>
+    <hr>
+    <div class="obraz">
+      <img src="tranff.png" alt="obrazok">
+    </div>
+    <p>Facebook: Jakub Petrila</p>
+    <hr>
+    <div class="obraz">
+      <img src="tranfi.png" alt="obrazok">
+    </div>
+    <p>Instagram: @jakubpetrila</p>
+    <hr>
+    <div class="obraz">
+      <img src="tranfsn.png" alt="obrazok">
+    </div>
+    <p>Snapchat: b_obukaj20</p>
+  </div>
+
+
+</body>
+
+</html>
